@@ -3,10 +3,14 @@ package com.personal_color.demo.controller;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Controller
 
 public class MainController {
+
+    @Autowired
+    FileInfoService service;
 
     @GetMapping("/hello")
     public String hello() {
