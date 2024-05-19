@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FileInfoService {
 
-    @Autowired
+    @Autowired(required = false)
     FileInfoDao dao;
 
     public int insertFile(FileInfoDto dto){
