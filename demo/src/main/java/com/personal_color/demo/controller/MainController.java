@@ -1,5 +1,7 @@
 package com.personal_color.demo.controller;
 
+import com.personal_color.demo.service.FileInfoService;
+
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
